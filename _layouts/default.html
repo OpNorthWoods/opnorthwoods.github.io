@@ -28,19 +28,18 @@
 <header class="hover">
   {% unless site.show_minimal and site.navigation and site.external %}
     <h1 {% if site.navigation and site.external %}class="full"{% endif %}><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-    <p>Privacy, anti-government, human-first-security.</p>
   {% endunless %}
   {% include menu.html menu=site.navigation %}
   {% include menu.html menu=site.external %}
 </header>
 
-<br>
-<p>Welcome to the worst of it.</p>
-<ul>
-  <li>XMR: 853gmcfemYHYqAdSWWsHQjELdPEJUCKLth6Tcp7UZ8x6FLHxuH2yzhs1ptLLRnGpRbg392QSPrVSnE3RX9jhzAqtKawVA5c</li>
-</ul>
-<br>
-  
+<div>
+  <p>Welcome to the worst of it, privacy, anti-government, human-first-security. With a sprinkle of autism.</p>
+  <ul>
+    <li>XMR: 853gmcfemYHYqAdSWWsHQjELdPEJUCKLth6Tcp7UZ8x6FLHxuH2yzhs1ptLLRnGpRbg392QSPrVSnE3RX9jhzAqtKawVA5c</li>
+  </ul>  
+</div>
+
 {{ content }}
 
 {% if site.footer %}
