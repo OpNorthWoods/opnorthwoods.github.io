@@ -1,0 +1,19 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Please use this signed message to verify and authenticate my primary PGP contact for (North).
+
+This message serves as a cryptographic proof of control and identity. If you are establishing secure communications, always verify this signature against the corresponding public key.
+Do not trust any key or contact claiming to represent me unless it is verifiably signed and matches this fingerprint.
+
+For secure correspondence, ensure that:
+> You are using the correct key ID and fingerprint
+> You have validated this signature independently
+> You are not relying on third-party intermediaries (e.g. forwarded messages or screenshots)
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQRyvvXehCMYdgVhDHkWc1CLX4dRTAUCaI7cKwAKCRAWc1CLX4dR
+THlcAP9Xw0jzVHE5qCcPNZSUaOsAOF/zZkq06n8OoouzsW+82gD+Laxl0F5Zvh8v
+2jqkFKAyHd+1scrHeApfaXhFLtEYjgc=
+=m/Bc
+-----END PGP SIGNATURE-----
