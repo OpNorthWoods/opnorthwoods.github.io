@@ -1,37 +1,46 @@
 body
   font: $font-size / $line-height $font-family
+  background: $bg-primary
+  color: $text-primary
+  margin: 0
+  padding: 20px
 
 p
-  text-align: justify
+  text-align: left
+  margin: 1em 0
 
 a
   color: $link-color
-  text-decoration: inherit
-  transition: .25s
-  article &:hover
-    text-decoration: underline
-  header &, footer &, aside &
-    color: inherit
+  text-decoration: underline
+  &:hover
+    color: $highlight
+  &:visited
+    color: #FF00FF
 
 hr
-  border: 1px dashed
+  border: 1px solid $border-color
   margin: 2em 0
+  height: 1px
+  background: $border-color
 
 footer
   margin-top: auto
+  padding-top: 1em
+  color: $text-secondary
 
 blockquote
-  background: reduce(14)
-  border-left: 3px solid reduce(80)
-  padding: 1px 1.5em
-  opacity: .75
+  background: $bg-secondary
+  border-left: 3px solid $accent
+  padding: 1em
+  margin: 1.25em 0
+  font-style: italic
 
 blockquote, figure
   margin: 1.25em 0
 
 img
   margin: .5em 0
-  border-radius: 4px
+  border: 1px solid $border-color
   max-width: 100%
 
 li
@@ -39,30 +48,36 @@ li
 
 table
   display: inline-block
-  max-width: 100%
   overflow-y: auto
   border-collapse: collapse
-  border-radius: 2px
+  border: 1px solid $border-color
 
 th, td
   padding: .5em 1em
-  border: 1px solid reduce(24)
+  border: 1px solid $border-color
+  background: $bg-secondary
 
-thead, tr:hover td, tr:hover th
-  background: reduce(12)
+thead
+  background: $bg-primary !important
+  font-weight: bold
+
+tr:hover td, tr:hover th
+  background: $highlight
+  color: $dark
 
 pre:not(pre pre)
   font-size: .8em
-  background: reduce(16)
-  border-radius: 4px
+  background: $bg-secondary
+  border: 1px solid $border-color
   margin: 1.5em 0
   padding: .8em 1.2em
   overflow-x: auto
+  font-family: "Courier New", monospace
 
 code:not(pre code)
   font-size: .9em
-  background: reduce(16)
-  border-radius: 3px
+  background: $bg-secondary
+  border: 1px solid $border-color
   margin: 0 .1em
   padding: .2em .4em
-  opacity: .75
+  font-family: "Courier New", monospace

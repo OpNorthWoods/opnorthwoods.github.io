@@ -1,9 +1,20 @@
 $font-size: calc(0.8rem + 0.2vw) !default
-$font-family: mono !default
-$line-height: 1.6 !default
-$link-color: #9398f9 !default
-$dark: #0c0c0c !default
-$light: #ffffff !default
+$font-family: "Courier New", monospace !default
+$line-height: 1.4 !default
+$link-color: #8B9DC3 !default
+$dark: #000000 !default
+$light: #FFFFFF !default
+
+// Nice subtle color palette
+$bg-primary: #1A1A1A !default
+$bg-secondary: #1A1A1A !default
+$text-primary: #E8E8E8 !default
+$text-secondary: #B0B0B0 !default
+$border-color: #404040 !default
+$accent: #6B7A99 !default
+$highlight: #8B9DC3 !default
+$warning: #D4A574 !default
+$danger: #A67C52 !default
 
 @function reduce ($percent)
   @return rgba(mix($dark, $light), $percent / 100)
