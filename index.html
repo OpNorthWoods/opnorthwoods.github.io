@@ -3,13 +3,21 @@ layout: default
 title: "Home"
 ---
 
+<div style="text-align: center; margin: 1em 0;">
+  <img src="https://seirdy.one/p/b/javascript-zero.4140486521.png" alt="JavaScript Free" style="border: 1px solid #6B7A99; margin: 0.5em;">
+  <img src="https://seirdy.one/p/b/cookie_free.1649305395.png" alt="Cookie Free" style="border: 1px solid #6B7A99; margin: 0.5em;">
+  <img src="https://maia.crimew.gay/badges/piracy.gif" alt="Piracy Badge" style="border: 1px solid #6B7A99; margin: 0.5em;">
+  <img src="https://seirdy.one/p/b/anonymize.2965571459.png" alt="Anonymize Badge" style="border: 1px solid #6B7A99; margin: 0.5em;">
+</div>
+
 {% if site.show_excerpts %}
   {% for post in site.posts %}
-    <article>
+    <div class="excerpt">
       {% include meta.html post=post %}
-      {{ post.excerpt }}
-      <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
-    </article>
+      {% assign excerpt_length = 120 %}
+      {% assign excerpt_text = post.excerpt | strip_html | truncate: excerpt_length %}
+      <p>{{ excerpt_text }}</p>
+    </div>
   {% endfor %}
 {% else %}
   {% capture source %}{% include_relative archive.html title="Posts" %}{% endcapture %}
