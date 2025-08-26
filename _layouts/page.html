@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-<article>
-  {% include meta.html post=page %}
-  {{ content }}
-</article>
+<div class="paranoid-box">
+  <article class="post-content">
+    {% include meta.html post=page %}
+    {{ content }}
+  </article>
+</div>
